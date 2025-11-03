@@ -7,23 +7,66 @@ body {
 .header {
   height: 72px;
   background: darkmagenta;
+  font-size: 32px;
+  font-weight: 900;
   color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 16px;
 }
 
 .footer {
   height: 72px;
   background: #eee;
   color: darkmagenta;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
 }
 
 .sidebar {
   width: 300px;
   background: royalblue;
-  box-sizing: border-box;
+  text-align: left;
+  flex-shrink: 0;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 48px;
+  padding-right: 0;
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  width: 300px;
+  height: 350px;
+  padding: 15px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* align-items: center; */
+  gap: 15px;
+
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
 }
