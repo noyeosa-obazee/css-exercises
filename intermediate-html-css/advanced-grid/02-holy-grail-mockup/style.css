@@ -5,6 +5,9 @@
 
 .container {
   text-align: center;
+    display: grid;
+  grid-template: repeat(2, 1fr) 5fr repeat(1, 1fr) / repeat(1, 1fr) repeat(1, 3fr);
+  gap: 20px;
 }
 
 .container div {
@@ -17,6 +20,7 @@
 
 .header {
   background-color: #393f4d;
+   grid-area: 1 / 1 / 1 / span 2;
 }
 
 .menu ul,
@@ -26,6 +30,7 @@
 
 .sidebar {
   background-color: #C50208;
+   grid-area: 2 / 1 / span 2 / 1;
 }
 
 .sidebar .photo {
@@ -46,6 +51,7 @@
 
 .nav {
   background-color: #C50208;
+  grid-area: 2 / 2 / 2 / 2;
 }
 
 .nav ul li {
@@ -55,6 +61,7 @@
 
 .article {
   background-color: #bccbde;
+   grid-area: 3 / 2 / 3 / 2;
 }
 
 .article p {
@@ -83,6 +90,7 @@
 
 .footer {
   background-color: #393f4d;
+  grid-area: 4 / 1 / 4 / span 2;
 }
 
 .footer p {
