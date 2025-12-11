@@ -39,8 +39,36 @@ button {
   pointer-events: none;
   opacity: 0%;
   text-align: center;
+  animation: slide-out 0.7s ease;
 }
 
+@keyframes slide-in {
+  0% {
+    transform: translate(-50%, -100vh);
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes slide-out {
+  0% {
+    transform: translate(-50%, -50%);
+  }
+
+  50% {
+    opacity: 0.3;
+  }
+
+  100% {
+    transform: translate(-50%, -100vh);
+  }
+}
 .popup-modal p {
   margin-bottom: 24px;
 }
@@ -55,6 +83,7 @@ button {
 
 .popup-modal.show {
   opacity: 100%;
+  animation: slide-in 0.7s ease;
   pointer-events: all;
 }
 
